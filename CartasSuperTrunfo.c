@@ -1,41 +1,41 @@
 #include <stdio.h>
 
 int main() {
-    // --- Carta ---
-    char estado1;
-    char codigo1[4]; // Ex: A01, B02 
-    char nomeCidade1[50];
-    int populacao1;
+    // --- Card ---
+    char state1;
+    char code1[4]; // Ex: A01, B02 
+    char cityName1[50];
+    int population1;
     float area1;
-    float pib1;
-    int pontosTuristico1;
+    float gdp1;
+    int touristSpots1;
 
-    float densidadePopulacional1;
-    float pibPerCapita1;
+    float populationDensity1;
+    float gdpPerCapita1;
 
-    printf("--- Cadastro da Carta 1 ---\n");
+    printf("--- Register Card 1 ---\n");
 
-    printf("Informe o Estado (A-H): ");
-    scanf(" %c", &estado1); 
+    printf("Enter the State (A-H): ");
+    scanf(" %c", &state1); 
 
-    printf("Informe o Codigo da Carta (ex: A01): ");
-    scanf("%s", codigo1);
+    printf("Enter the Card Code (e.g., A01): ");
+    scanf("%s", code1);
 
-    printf("Informe o Nome da Cidade: ");
-    scanf(" %[^\n]", nomeCidade1); 
+    printf("Enter the City Name: ");
+    scanf(" %[^\n]", cityName1); 
 
-    printf("Informe a População: ");
-    scanf("%d", &populacao1);
+    printf("Enter the Population: ");
+    scanf("%d", &population1);
 
-    printf("Informe a Area (km²): ");
+    printf("Enter the Area (km²): ");
     scanf("%f", &area1);
 
-    printf("Informe o PIB (bilhões de reais): ");
-    scanf("%f", &pib1);
+    printf("Enter the GDP (in billions of BRL): ");
+    scanf("%f", &gdp1);
 
-    printf("Informe o Numero de Pontos Turisticos: ");
-    scanf("%d", &pontosTuristicos1);
+    printf("Enter the Number of Tourist Spots: ");
+    scanf("%d", &touristSpots1);
 
-    // Cálculos para a Carta 
-    densidadePopulacional1 = (float)populacao1 / area1;
-    pibPerCapita1 = (pib1 * 1000000000.0) / populacao1; 
+    // Calculations for the Card 
+    populationDensity1 = (float)population1 / area1;
+    gdpPerCapita1 = (gdp1 * 1000000000.0) / population1;
